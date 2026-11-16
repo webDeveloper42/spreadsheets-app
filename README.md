@@ -73,18 +73,3 @@ It's built from scratch: no code or artwork from Excel or Google Sheets is used.
 | `sheets/webapi.py` | Connects the page to the server, and holds the templates |
 
 Formulas are calculated in the browser. Each save also stores the results, so exports don't have to recalculate anything.
-
----
-
-## Running the tests
-
-```sh
-# Storage, files, templates and the formula engine
-python3 -m unittest discover -s tests
-
-# The page: start a test server on throwaway data, then drive the page in Node
-python3 tests/serve_isolated.py 8891 /tmp/sheets-test &
-node tests/ui_test.js http://127.0.0.1:8891
-```
-
-The page tests need the dashboard (`capture-app`) installed next to this app.
