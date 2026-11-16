@@ -88,18 +88,3 @@ node tests/ui_test.js http://127.0.0.1:8891
 ```
 
 The page tests need the dashboard (`capture-app`) installed next to this app.
-
----
-
-## Updating this repository
-
-The page files normally live inside the dashboard, so this repo keeps a copy of them. Before you commit, run:
-
-```sh
-./sync_for_git.sh
-git add -A
-git commit -m "Describe your change"
-git push
-```
-
-Your own spreadsheets are **not** in this repository. The `data/` folder is ignored by git.
