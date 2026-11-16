@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+backups/
+tests/.last-iso
+# live database (the committed copy is data/snapshot/sheets.db, made by sync_for_git.sh)
+data/sheets.db
+data/sheets.db-wal
+data/sheets.db-shm
+data/snapshot/
